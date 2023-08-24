@@ -1,9 +1,4 @@
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
+import { Routes, Route, BrowserRouter  } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import Navbar from "./components/navbar/Navbar";
@@ -20,22 +15,20 @@ const client = new QueryClient({});
 function App() {
   return (
     <QueryClientProvider client={client}>
-      <RouterProvider
-        router={createBrowserRouter(
-          createRoutesFromElements(
-            <Route path="/" element={<Navbar />}>
-              <Route index element={<Homepage />} />
-              <Route path="candlestick" element={<Candle />} />
-              <Route path="line" element={<Line />} />
-              <Route path="sma" element={<Sma />} />
-              <Route path="ema" element={<Ema />} />
-              <Route path="sma-ema" element={<Sma_Ema />} />
-              <Route path="rsi" element={<Rsi />} />
-              <Route path="*" element={<h2>Error..</h2>} />
-            </Route>
-          )
-        )}
-      />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Navbar />}>
+            <Route index element={<Homepage />} />
+            <Route path="candlestick" element={<Candle />} />
+            <Route path="line" element={<Line />} />
+            <Route path="sma" element={<Sma />} />
+            <Route path="ema" element={<Ema />} />
+            <Route path="sma-ema" element={<Sma_Ema />} />
+            <Route path="rsi" element={<Rsi />} />
+            <Route path="*" element={<h2>Error..</h2>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </QueryClientProvider>
   );
 }
