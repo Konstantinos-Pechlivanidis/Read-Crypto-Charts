@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import ApexCharts from "react-apexcharts";
-import { RSI_Indicator_Calc } from "../../indicator_calc/Rsi_Indicator_Calc";
+import { RSI_Indicator_Calc } from "../../indicator_calc/RSI_Indicator_Calc"
 
 import { useSelector } from "react-redux";
 
