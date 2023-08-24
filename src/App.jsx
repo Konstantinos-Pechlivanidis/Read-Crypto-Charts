@@ -31,6 +31,7 @@ function App() {
               <Route path="ema" element={<Ema />} />
               <Route path="sma-ema" element={<Sma_Ema />} />
               <Route path="rsi" element={<Rsi />} />
+              <Route path="*" element={<h2>Error..</h2>} />
             </Route>
           )
         )}
