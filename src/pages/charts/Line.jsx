@@ -2,7 +2,7 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 import { useQuery } from "@tanstack/react-query";
 
-import Line_comp from "../../components/Charts/Line_comp"
+import Line_comp from "../../components/charts/Line_comp"
 
 const fetchCrypto = (crypto, days) => {
   return axios.get(
