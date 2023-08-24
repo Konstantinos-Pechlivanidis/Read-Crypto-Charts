@@ -1,6 +1,7 @@
 import {
   createBrowserRouter,
   createRoutesFromElements,
+  Routes 
   Route,
   RouterProvider,
 } from "react-router-dom";
@@ -23,6 +24,7 @@ function App() {
       <RouterProvider
         router={createBrowserRouter(
           createRoutesFromElements(
+            <Routes>
             <Route path="/" element={<Navbar />}>
               <Route index element={<Homepage />} />
               <Route path="candlestick" element={<Candle />} />
@@ -32,6 +34,7 @@ function App() {
               <Route path="sma-ema" element={<Sma_Ema />} />
               <Route path="rsi" element={<Rsi />} />
             </Route>
+            </Routes>
           )
         )}
       />
