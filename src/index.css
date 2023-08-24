@@ -1,0 +1,248 @@
+body {
+  background-color: #e5e7e7;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.homepage h1 {
+  font-size: 2.5rem;
+  color: #212f3d;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.homepage h1 + p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  align-self: center;
+  text-align: center;
+  max-width: 650px;
+  letter-spacing: -0.3px;
+  /* background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem; */
+}
+
+.homepage section {
+  align-self: center;
+}
+
+.homepage #offer {
+  max-width: 1000px;
+}
+
+.homepage section p {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage section p span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+.homepage h2 {
+  font-size: 2rem;
+  color: #212f3d;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+.homepage #use {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+  max-width: 1600px;
+}
+
+.homepage #use p {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.chart-container {
+  margin-top: 0.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.HeadChart {
+  display: flex;
+  justify-content: space-around;
+}
+
+.crypto{
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d4dc5;
+  border: 3px solid #b8baba;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  width: max-content;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.tips-btn{
+  font-size: 1rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+  color: #0d4dc5;
+  border: 3px solid #b8baba;
+  width: max-content;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+
+
+
+.chart-description {
+  padding: 1.5rem  1.5rem 0rem 1.5rem;
+}
+
+.divSelect {
+  display: flex;
+  flex-direction: column;
+  color: #c5d8fb;
+  padding-bottom: 0.5rem;
+}
+
+.divSelect label {
+  padding-bottom: 0.3rem;
+  align-self: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: -1px;
+}
+
+.select {
+  width: 6rem;
+  align-self: center;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  letter-spacing: -0.5px;
+  border: 1px solid #b1b1b1;
+  background-color: #fff;
+}
+
+#search {
+  width: 7rem;
+  align-self: center;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid #b1b1b1;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  align-self: center;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+#searchSelect {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 8rem;
+  border: 1px solid #b1b1b1;
+  border-radius: 6px;
+  font-size: 1rem;
+  align-self: center;
+}
+
+#firstOption {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #5f6a6a;
+}
+
+option {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+  text-align: left;
+  color: #12192c;
+}
+
+option:hover {
+  background-color: #0c5df4;
+}
+
+.loading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -1px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border: 3px solid #b8baba;
+  background-color: #fff;
+  border-radius: 6px;
+  width: max-content;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .chart-container {
+    margin-top: 1rem;
+  }
+  .select {
+    min-width: 4rem;
+    padding: 0.5rem;
+  }
+  #search {
+    min-width: 3rem;
+    padding: 0.5rem;
+  }
+  .tabsMobile {
+    display: flex;
+    z-index: 99;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 3rem 1.3rem 1rem 1.3rem;
+    height: 100vh;
+    background-color: #212f3d;
+  }
+
+  .tabs {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .tabsMobile {
+    display: none;
+  }
+  .tabs {
+    display: flex;
+    z-index: 99;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 3rem 1.3rem 1rem 1.3rem;
+    height: 100vh;
+    background-color: #212f3d;
+  }
+}
