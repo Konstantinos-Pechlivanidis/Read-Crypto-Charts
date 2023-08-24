@@ -25,12 +25,12 @@ function App() {
           createRoutesFromElements(
             <Route path="/" element={<Navbar />}>
               <Route index element={<Homepage />} />
-              <Route path="/candlestick" element={<Candle />} />
-              <Route path="/line" element={<Line />} />
-              <Route path="/sma" element={<Sma />} />
-              <Route path="/ema" element={<Ema />} />
-              <Route path="/sma-ema" element={<Sma_Ema />} />
-              <Route path="/rsi" element={<Rsi />} />
+              <Route path="candlestick" element={<Candle />} />
+              <Route path="line" element={<Line />} />
+              <Route path="sma" element={<Sma />} />
+              <Route path="ema" element={<Ema />} />
+              <Route path="sma-ema" element={<Sma_Ema />} />
+              <Route path="rsi" element={<Rsi />} />
             </Route>
           )
         )}
